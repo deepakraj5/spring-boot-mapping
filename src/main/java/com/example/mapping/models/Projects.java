@@ -7,17 +7,21 @@ public class Projects {
 	private String name;
 	private String description;
 	private List<Users> users;
+	private Issue issue;
 	
 	public Projects() {
 		
 	}
 
-	public Projects(String id, String name, String description, List<Users> users) {
+	public Projects(String id, String name, String description, List<Users> users, Issue issue) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.users = users;
+		this.issue = issue;
 	}
+
+
 
 	public String getId() {
 		return id;
@@ -49,5 +53,13 @@ public class Projects {
 
 	public void setUsers(List<Users> users) {
 		this.users = users;
+	}
+
+	public Issue getIssue() {
+		return issue;
+	}
+
+	public void setIssue(Issue issue) {
+		this.issue = issue;
 	}
 }
